@@ -3,9 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function Up() {
   return (
-    <View style={styles.container}>
-      <Text>Up!</Text>
-      <StatusBar style="auto" />
+    <View >
+      <Text style={styles.title}>UP</Text>
     </View>
   );
 }
@@ -17,4 +16,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title:{
+    fontSize:30,
+    fontWeight:'bold',
+    marginTop:44,
+    marginLeft:17
+  }
 });
