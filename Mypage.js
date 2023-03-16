@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ImageBackground, StyleSheet,Image, Text, View } from 'react-native';
+
+//const BUTTON_SIZE = Spacing * 7;
+//const IMAGE_HEIGHT = Layout.window.height / 1.4;
 
 export default function Mypage() {
   return (
-    <View style={styles.container}>
-      <Text>Your Passport!</Text>
-      <StatusBar style="auto" />
+    <View style={{height:"75%", backgroundColor:"#2B3472", borderBottomLeftRadius:20, borderBottomRightRadius:20}}>
+      <View style={styles.korea}>
+        <Image source={require("./assets/Koreawhite.png")}></Image>
+      </View>
     </View>
   );
 }
@@ -17,4 +21,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  korea:{
+    position:'absolute',
+    height:10,
+    width:20,
+    marginTop:"125%",
+    marginLeft:"80%"
+  }
 });
