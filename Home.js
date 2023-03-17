@@ -48,32 +48,54 @@ function HomeScreen(props) {
         </CollapseHeader>
         <CollapseBody style={{width:"100%",height:"30%"}}>
           <View style={styles.communitytable}>
-            <View>
-              <View style={styles.community}>
-                </View>
-              <Text>community</Text>
+
+            <View style={styles.firstline}>
+              <View>
+                <View style={styles.community} />
+                <Text>community</Text>
+              </View>
+              <View>
+                <View style={styles.community} />
+                <Text>community</Text>
+              </View>
+              <View>
+                <View style={styles.community} /> 
+                <Text>community</Text>
+              </View>
+              <View>
+                <View style={styles.community} />
+                <Text>community</Text>
+              </View>
+              <View>
+                <View style={styles.community} />
+                <Text>community</Text>
+              </View>
             </View>
-            <View>
-              <View style={styles.community}>
-                </View>
-              <Text>community</Text>
-            </View>
-            <View>
-              <View style={styles.community}>
-                </View>
-              <Text>community</Text>
-            </View>
-            <View>
-              <View style={styles.community}>
-                </View>
-              <Text>community</Text>
-            </View>
-            <View>
-              <View style={styles.community}>
-                </View>
-              <Text>community</Text>
-            </View>
+
+            <View style={styles.secondline}>
+              <View>
+                <View style={styles.community} />
+                <Text>community</Text>
+              </View>
+              <View>
+                <View style={styles.community} />
+                <Text>community</Text>
+              </View>
+              <View>
+                <View style={styles.community} /> 
+                <Text>community</Text>
+              </View>
+              <View>
+                <View style={styles.community} />
+                <Text>community</Text>
+              </View>
+              <View>
+                <View style={styles.community} />
+                <Text>community</Text>
+              </View>
           </View>
+
+        </View>
         </CollapseBody>
       </Collapse>
       </View>
@@ -182,7 +204,11 @@ const styles = StyleSheet.create({
   communitytable:{
     width:"100%",
     height:230,
-    borderWidth:1,
+  },
+  firstline:{
+    flexDirection:"row"
+  },
+  secondline:{
     flexDirection:"row",
   },
   community:{
@@ -191,6 +217,6 @@ const styles = StyleSheet.create({
     borderWidth:1,
     marginLeft:9,
     marginTop:10,
-    borderColor:"white"
+    borderColor:"white",
   }
 });
