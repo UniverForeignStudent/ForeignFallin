@@ -33,3 +33,5 @@ Backend- spring 예정
 어플리케이션 보다는 웹사이트부터!
 
 ReactNative에서  Flutter로 갈아타기로 결정이 됐고, 백엔드는 node.js를 이용하여 프로그래밍 하기로하였다.
+
+foreigb -> Donggle 발음이 편하고 쉬워서
